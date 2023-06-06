@@ -1,7 +1,13 @@
+
+<?php
+
+$option = null;
+$pais = $_REQUEST['pais'];
+if($pais == 'Paraguay' or $pais == 'Argentina' or $pais == 'Uruguay')
+{
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php
-?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,5 +18,12 @@
     
 </body>
 </html>
+    //encuesta en español
+<?php 
+}
 
-
+else
+{
+    //encuesta en portugues
+}
+?>
