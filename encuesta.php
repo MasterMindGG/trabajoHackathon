@@ -3,12 +3,9 @@
 
 include('conexion.php');
 
-$option = null;
-$pais = 'Uruguay';
-
-# $pais = $_REQUEST['pais'];
-
-if($pais == 'Paraguay' or $pais == 'Argentina' or $pais == 'Uruguay')
+$pais = $_REQUEST['pais'];
+echo $pais;
+if(($pais == 'Paraguay') or ($pais == 'Argentina') or ($pais == 'Uruguay'))
 {
 ?>
 <!DOCTYPE html>
@@ -200,35 +197,35 @@ if($pais == 'Paraguay' or $pais == 'Argentina' or $pais == 'Uruguay')
 
 <h1>Seccion Infraestructura</h1>
 
-<label for="">En que estado esta la institucion/edificio</label>
+<label for="">En que estado esta la institucion/edificio</label> <br>
 <input type="radio" name="estadoinstitucional" value="Descuidado"> Descuidado <br>
 <input type="radio" name="estadoinstitucional" value="Regular"> Regular <br>
 <input type="radio" name="estadoinstitucional" value="Muy bier cuidado"> Muy bien cuidado <br>
 
-<label for="">Que tal es la calidad del internet/wifi?</label>
+<label for="">Que tal es la calidad del internet/wifi?</label> <br>
 <input type="radio" name="wifi" value="Excelente"> Excelente <br>
 <input type="radio" name="wifi" value="Bueno"> Bueno <br>
 <input type="radio" name="wifi" value="Malo"> Malo <br>
 
-<label for="">Tienen suficiente equipamientos para todos los alumnos?</label>
+<label for="">Tienen suficiente equipamientos para todos los alumnos?</label> <br>
 <input type="radio" name="cantequipamientos" value="Si"> Si <br>
 <input type="radio" name="cantequipamientos" value="No"> No <br>
 
-<label for="">Cual es el estado de los equipamientos tecnicos?</label>
+<label for="">Cual es el estado de los equipamientos tecnicos?</label> <br>
 <input type="radio" name="calequipamientos" value="Descuidado"> Descuidado <br>
 <input type="radio" name="calequipamientos" value="Regular"> Regular <br>
 <input type="radio" name="calequipamientos" value="Muy bien cuidado"> Muy bien cuidado <br>
 
-<label for="">Hay buenos equipos de climatizacion?</label>
+<label for="">Hay buenos equipos de climatizacion?</label> <br>
 <input type="radio" name="ace" value="Si"> Si <br>
 <input type="radio" name="ace" value="No"> No <br>
 <input type="radio" name="ace" value="No hay"> No hay <br>
 
-<label for="">Hay suficientes muebles para los alumnos de tu aula?</label>
+<label for="">Hay suficientes muebles para los alumnos de tu aula?</label> <br>
 <input type="radio" name="muebles" value="Si"> Si <br>
 <input type="radio" name="muebles" value="No"> No <br>
 
-<label for="">Hay algun espacio designado para las materias especificas?</label>
+<label for="">Hay algun espacio designado para las materias especificas?</label> <br>
 <input type="radio" name="matespecificas" value="Si"> Si <br>
 <input type="radio" name="matespecificas" value="No"> No <br>
 
