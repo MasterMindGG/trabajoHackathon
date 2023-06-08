@@ -11,21 +11,28 @@
 <body>
   <center>
 <?php 
- $menu=4;
+session_start();
+
+if(isset($_REQUEST['menu'])){
+    $menu=$_REQUEST['menu'];
+    $_SESSION['men']=$_REQUEST['menu'];
+}else{
+  $menu=$_SESSION['men'];
+}
 $p1 = 0;
 $p2 = 0;
 $p3 = 0;
 $p4 = 0;
 
 ?>
-<h1>Informes</h1>
+<h1>INFORMES</h1>
 <!-- Formulario MENU con botones para ejecutar los informes -->
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
        ?>">
         <?php 
         if ($menu==1) {?>
-        <H1>INFORME</H1>
+        <H1>General</H1>
         <input type="submit" name="informe1" value="Participación por pais."><br>
         <input type="submit" name="informe1_1" value="Participación por genero."><br>
         <?php }
