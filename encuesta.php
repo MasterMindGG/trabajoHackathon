@@ -208,13 +208,16 @@ if(($pais == 'Paraguay') or ($pais == 'Argentina') or ($pais == 'Uruguay'))
 <input type="radio" name="wifi" value="Malo"> Malo <br>
 
 <label for="">Tienen suficiente equipamientos para todos los alumnos?</label> <br>
-<input type="radio" name="cantequipamientos" value="Si"> Si <br>
-<input type="radio" name="cantequipamientos" value="No"> No <br>
+<input type="radio" name="cantequipamientos" value="Pocos">Pocos<br>
+<input type="radio" name="cantequipamientos" value="Suficientes">Suficiente<br>
+<input type="radio" name="calequipamientos" value="Muchos">Muchos<br>
+<input type="radio" name="calequipamientos" value="No tengo">No tengo equipamiento<br>
 
 <label for="">Cual es el estado de los equipamientos tecnicos?</label> <br>
-<input type="radio" name="calequipamientos" value="Descuidado"> Descuidado <br>
-<input type="radio" name="calequipamientos" value="Regular"> Regular <br>
-<input type="radio" name="calequipamientos" value="Muy bien cuidado"> Muy bien cuidado <br>
+<input type="radio" name="calequipamientos" value="Obsoletos">Obsoletos<br>
+<input type="radio" name="calequipamientos" value="Descuidados">Descuidados<br>
+<input type="radio" name="calequipamientos" value="Bien cuidados">Bien cuidados<br>
+<input type="radio" name="calequipamientos" value="No tengo">No tengo equipamiento<br>
 
 <label for="">Hay buenos equipos de climatizacion?</label> <br>
 <input type="radio" name="ace" value="Si"> Si <br>

@@ -66,3 +66,4 @@ $resultado = mysqli_query($mysqli, $sql);
 		echo "No hay usuarios registrados.";
 	}
 ?>
+
