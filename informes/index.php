@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="informe.css">
     <title>Document</title>
 </head>
 
@@ -25,43 +25,53 @@ $p3 = 0;
 $p4 = 0;
 
 ?>
-<h1>INFORMES</h1>
+<!-- ----ENCABEZADO COMIENZO----- -->
+
+<div class="logo">
+
+    <div class="logo_circulo"></div>
+    <a href="../index.php"><img class="img_logo" src="../img/logo.png"></a>
+</div>
+
+<!-- --- ENCABEZADO FIN--- -->
+
+<h1 style="color:white; margin-top:20px;">INFORMES</h1>
 <!-- Formulario MENU con botones para ejecutar los informes -->
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);
        ?>">
         <?php 
         if ($menu==1) {?>
-        <H1>General</H1>
-        <input type="submit" name="informe1" value="Participación por pais."><br>
-        <input type="submit" name="informe1_1" value="Participación por genero."><br>
+        <H1 style="color:white; margin-top:20px;font-size:30px;">General</H1>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe1" value="Participación por pais."><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px;margin-top:20px;" type="submit" name="informe1_1" value="Participación por genero."><br>
         <?php }
 
          if ($menu==2) { ?>
-        <H1>ACADEMICO</H1>
-        <input type="submit" name="informe2" value="Quien decide las pasantias"> <br>
-        <input type="submit" name="informe3" value="Como es la carga horaria"><br>
-        <input type="submit" name="informe4" value="Opiniones de materias"><br>
+        <H1 style="color:white; margin-top:20px;font-size:30px;">ACADEMICO</H1>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe2" value="Quien decide las pasantias"> <br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe3" value="Como es la carga horaria"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe4" value="Opiniones de materias"><br>
         <?php }
 
          if ($menu==3) { ?>
-       <H1>CONVICENCIA</H1>
-        <input type="submit" name="informe5" value="Centro de estudiantes"><br>
-        <input type="submit" name="informe6" value="Calificacion de alumnos"><br>
-        <input type="submit" name="informe7" value="Calificacion de docentes"><br>
-        <input type="submit" name="informe8" value="Casos de Bullying?"><br>
-        <input type="submit" name="informe9" value="Disponibilidad de un psicologo?"><br>
+       <H1 style="color:white; margin-top:20px;font-size:30px;">CONVICENCIA</H1>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe5" value="Centro de estudiantes"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe6" value="Calificacion de alumnos"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe7" value="Calificacion de docentes"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe8" value="Casos de Bullying?"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe9" value="Disponibilidad de un psicologo?"><br>
         <?php }
 
          if ($menu==4) { ?>
-        <H1>INFRAESTRUCTURA</H1>
-        <input type="submit" name="informe10" value="Estado de infraestructura"><br>
-        <input type="submit" name="informe11" value="Calidad wifi?"><br>
-        <input type="submit" name="informe12" value="Suficiencia de equipos"><br>
-        <input type="submit" name="informe13" value="Estado de equipos"><br>
-        <input type="submit" name="informe14" value="Equipo de climatizacion"><br>
-        <input type="submit" name="informe15" value="Suficiencia de muebles"><br>
-        <input type="submit" name="informe16" value="Laboratorios"><br>
+        <H1 style="color:white; margin-top:20px;font-size:30px;">INFRAESTRUCTURA</H1>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe10" value="Estado de infraestructura"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe11" value="Calidad wifi?"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe12" value="Suficiencia de equipos"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe13" value="Estado de equipos"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe14" value="Equipo de climatizacion"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe15" value="Suficiencia de muebles"><br>
+        <input style="color:white; border: none;border-radius:10px; background: linear-gradient(45deg, #925d82, #9d6cc9, #605e81);widht:70px;height:30px; margin-top:20px;" type="submit" name="informe16" value="Laboratorios"><br>
         <?php  }?>
        
 
@@ -85,11 +95,17 @@ $p4 = 0;
     <?php
   function generarInforme1() {
   ?>    
-      <h1>¿Participación por pais?</h1>
+      <h1 style="color:white;">¿Participación por pais?</h1>
   <!--h3>Paraguay</h3-->
+  <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
     include('../conexion.php');
@@ -159,12 +175,18 @@ echo 'Br='.$br.'<br>'; */
     } 
   function generarInforme1_1() {
   ?>    
-      <h1>¿Participación por genero?</h1>
+      <h1 style="color:white;">¿Participación por genero?</h1>
   <!--h3>Paraguay</h3-->
+
+  <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
-
+  </td>
+  </tr>
+  </table>
 <?php 
     include('../conexion.php');
     $p1=0;
@@ -195,10 +217,6 @@ if (mysqli_num_rows($resultado) > 0) {
 } else {
   echo "No se han cargado encuestas.";
 };
-echo 'Py='.$p1.'<br>';
-echo 'Ar='.$p2.'<br>';
-echo 'Ur='.$p3.'<br>';
-
   ?>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -229,10 +247,16 @@ echo 'Ur='.$p3.'<br>';
     } 
   function generarInforme2() {
   ?>    
-      <h1>¿Quien decide las pasantías?</h1>
+      <h1 style="color:white;">¿Quien decide las pasantías?</h1>
+      <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
     include('../conexion.php');
@@ -303,11 +327,17 @@ if (mysqli_num_rows($resultado) > 0) {
     }
   function generarinforme3() {
     ?>    
-        <h1>¿Como es la carga horaria?</h1>
+        <h1 style="color:white;">¿Como es la carga horaria?</h1>
     <!--h3>Paraguay</h3-->
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+    <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -372,10 +402,16 @@ if (mysqli_num_rows($resultado) > 0) {
     }
   function generarInforme4() {
   ?>    
-      <h1>¿Que opinas de los contenidos que estas estudiando?</h1>
+      <h1 style="color:white;">¿Que opinas de los contenidos que estas estudiando?</h1>
+      <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
     include('../conexion.php');
@@ -447,10 +483,16 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme5() {
     ?>    
-        <h1>¿Como calificarias el funcionamiento del centro de estudiantes?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">¿Como calificarias el funcionamiento del centro de estudiantes?</h1>
+        <table widht= "50%">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -518,10 +560,16 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme6() {
     ?>    
-        <h1>Como calificarias la relacion entre alumnos?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">Como calificarias la relacion entre alumnos?</h1>
+        <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -590,11 +638,17 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme7() {
     ?>    
-        <h1>Como calificarias la relacion con los docentes?</h1>
+        <h1 style="color:white;">Como calificarias la relacion con los docentes?</h1>
     <!--h3>Paraguay</h3-->
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+    <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
     
 <?php 
       include('../conexion.php');
@@ -660,11 +714,17 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme8() {
     ?>    
-        <h1>Haz sufrido Bullying?</h1>
+        <h1 style="color:white;">Haz sufrido Bullying?</h1>
     <!--h3>Paraguay</h3-->
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+    <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
     
 <?php 
       include('../conexion.php');
@@ -726,11 +786,17 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme9() {
     ?>    
-        <h1>Tienen apoyo psicologico en tu institucion?</h1>
+        <h1 style="color:white;">Tienen apoyo psicologico en tu institucion?</h1>
     <!--h3>Paraguay</h3-->
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+    <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
     
 <?php 
       include('../conexion.php');
@@ -793,11 +859,17 @@ echo 'P3='.$p3.'<br>';*/
     }
   function generarInforme10() {
   ?>    
-      <h1>En que estado esta la institucion/edificio</h1>
+      <h1 style="color:white;">En que estado esta la institucion/edificio</h1>
   <!--h3>Paraguay</h3-->
+  <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
+  </td>
+  </tr>
+  </table>
   
 <?php 
     include('../conexion.php');
@@ -864,11 +936,17 @@ echo 'Br='.$br.'<br>'; */
     }
   function generarInforme11() {
     ?>    
-        <h1>Que tal es la calidad del internet/wifi?</h1>
+        <h1 style="color:white;">Que tal es la calidad del internet/wifi?</h1>
     <!--h3>Paraguay</h3-->
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+    <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
     
 <?php 
       include('../conexion.php');
@@ -935,10 +1013,16 @@ echo 'Br='.$br.'<br>'; */
     }
   function generarInforme12() {
     ?>    
-        <h1>Tienen suficiente equipamientos para todos los alumnos?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">Tienen suficiente equipamientos para todos los alumnos?</h1>
+        <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -1013,10 +1097,16 @@ echo 'Br='.$br.'<br>'; */
     }
   function generarInforme13() {
   ?>    
-      <h1>Cual es el estado de los equipamientos tecnicos?</h1>
+      <h1 style="color:white;">Cual es el estado de los equipamientos tecnicos?</h1>
+      <table widht= "300px">
+    <tr>
+      <td>
   <div class="grafico">
     <canvas id="grafico"></canvas>
   </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
     include('../conexion.php');
@@ -1088,10 +1178,16 @@ if (mysqli_num_rows($resultado) > 0) {
     }
   function generarInforme14() {
     ?>    
-        <h1>Hay buenos equipos de climatizacion?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">Hay buenos equipos de climatizacion?</h1>
+        <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -1160,10 +1256,16 @@ if (mysqli_num_rows($resultado) > 0) {
     }
   function generarInforme15() {
     ?>    
-        <h1>Hay suficientes muebles para los alumnos de tu aula?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">Hay suficientes muebles para los alumnos de tu aula?</h1>
+        <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');
@@ -1227,10 +1329,16 @@ if (mysqli_num_rows($resultado) > 0) {
     }
   function generarInforme16() {
     ?>    
-        <h1>Hay algun espacio designado para las materias especificas?</h1>
-    <div class="grafico">
-      <canvas id="grafico"></canvas>
-    </div>
+        <h1 style="color:white;">Hay algun espacio designado para las materias especificas?</h1>
+        <table widht= "300px">
+    <tr>
+      <td>
+  <div class="grafico">
+    <canvas id="grafico"></canvas>
+  </div>
+  </td>
+  </tr>
+  </table>
 
 <?php 
       include('../conexion.php');

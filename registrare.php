@@ -1,5 +1,5 @@
 <?php
-
+echo '<style>body { background-color: rgb(102, 102, 192);}</style>';
 include('conexion.php');
 
 $pais = $_REQUEST['pais'];
@@ -65,5 +65,6 @@ $sql="INSERT INTO `encuesta`(`pais`, `edad`, `genero`, `departamento`, `email`, 
 //echo $sql;
 if($mysqli->query($sql)===TRUE){
     echo ' <center><h1>Registro cargado</h1>';
+    header("refresh:1;url=index.php");
 };
 ?>

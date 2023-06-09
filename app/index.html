@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,24 +38,24 @@
             <div class="logo">
 
                 <div class="logo_circulo"></div>
-                <a href="index.php"><img class="img_logo" src="img/logo.png"></a>
+                <a href="#"><img class="img_logo" src="img/logo.png"></a>
 
             </div>
 
             <div class="navbar_izquierdo">
 
                 <ul>
-                    <li class="item-2"><a href="informes/index.php?menu=1">Generales</a></li>
-                    <li class="item-3"><a href="informes/index.php?menu=2">Educación</a></li>
-                    <li class="item-3"><a href="informes/index.php?menu=3">Convivencia</a></li>
-                    <li class="item-3"><a href="informes/index.php?menu=4">Infraestructura</a></li>
+                    <li class="item-2"><a href="paginas/nosotros.html">Generales</a></li>
+                    <li class="item-3"><a href="paginas/contacto.html">Educación</a></li>
+                    <li class="item-3"><a href="paginas/contacto.html">Convivencia</a></li>
+                    <li class="item-3"><a href="paginas/contacto.html">Infraestructura</a></li>
                 </ul>
 
             </div>
 
             <div class="navbar_derecho">
 
-                    <button class="login" type="button">Hackathon</button>
+                    <button class="login" type="button">Informes</button>
                     <button class="login" type="button">PAUB</button>
 
             </div>
@@ -88,14 +88,14 @@
             
                     <ul>
             
-                        <li><a href="informes/index.php?menu=1">Generales</a></li>
-                        <li><a href="informes/index.php?menu=2">Educación</a></li>
-                        <li><a href="informes/index.php?menu=3">Convivencia</a></li>
-                        <li><a href="informes/index.php?menu=4">Infrestructura</a></li>
+                        <li><a href="paginas/productos.html">Generales</a></li>
+                        <li><a href="paginas/nosotros.html">Educación</a></li>
+                        <li><a href="paginas/contacto.html">Convivencia</a></li>
+                        <li><a href="paginas/contacto.html">Infrestructura</a></li>
                         
                         <li role="separator"></li>
 
-                        <button class="login" type="button">Hackathon</button>
+                        <button class="login" type="button">INFORMES</button>
                         <button class="login" type="button">PAUB</button>
             
                     </ul>

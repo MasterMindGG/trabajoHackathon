@@ -1,0 +1,1131 @@
+/* ----------------> Configuración General <---------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    background: linear-gradient(45deg, #903775, #8233c5, #363553);
+      
+}
+
+h1{ font-size: 3.3em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1em;}
+
+/* ----------------> Configuración del Header <---------------- */
+
+.imagen-fondo{
+
+    height: 620px;
+
+    /* --- Configuración para poner la imagen al fondo del contenido --- */
+
+    position: absolute;
+    z-index: -1;
+
+    /* --- Configuración para posicionar la imagen correctamente --- */
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* --- Configuración para hacer la imagen borrosa --- */
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px); 
+
+    /* --- tamaño de la imagen --- */
+
+    width: 100%;
+}
+
+/* ----------------> Configuración del Logo <---------------- */
+
+.img_logo{
+    background-image: url(img/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 115px;
+}
+
+.img_logo:hover{
+    transform: rotate(360deg);
+    transition: all 1.4s;
+}
+
+ /* ----------------> Configuración del Header <---------------- */
+
+header{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.contenedor_principal{
+    width: 100%;
+    height: 120px;
+}
+
+ /* ----------------> Efecto de línea en los Items <---------------- */
+
+.item-1 a, .item-2 a, .item-3 a{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 3px 2px #474747;
+    transition: all .5s;
+}
+
+.item-1 a:hover::before, .item-3 a:hover::before{
+    left: 2;
+    width: 111px;
+    transition: .4s ease-out;
+}
+
+.item-2 a:hover::before{
+    left: 4; 
+    width: 82px;
+    transition: .4s ease-out;
+}
+
+ /* ----------------> Efecto de sombra en los items <---------------- */
+
+.item-1 a:hover, .item-2 a:hover, .item-3 a:hover{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    transition: all .5s;
+}
+
+/* ----------------> Botón de Login (Código Importado) <---------------- */
+
+.login, .menu_desplegable_items button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 0px 0px 3px #fff, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, inset 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 3px #fff, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, inset 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: all .5s;
+    margin-top: 22px;
+    margin-right: 25px;
+}
+
+.login:before, .menu_desplegable_items button:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: efecto 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.login:hover, .menu_desplegable_items button:focus{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
+.login:hover:before, .menu_desplegable_items button:focus:before{
+    opacity: 1;
+}
+
+/* ----------------> Aniamción de RGB para botón de Login <---------------- */
+
+@keyframes efecto {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* ----------------> Estilos para PC <---------------- */
+
+@media (min-width: 1199px){
+
+    /* ----------------> Estilos del Navbar <---------------- */
+
+    .nav_mobile{
+        display: none;
+    }    
+
+    .contenedor_principal{
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .navbar_izquierdo ul{
+        display: flex;
+        line-height: 2;
+        font-weight: 500;
+        position: relative;
+        padding-left: 30px;
+        margin-right: 110px;
+        padding-right: 300px;
+        font-size: 18px;
+        margin-left: -40px;
+    }
+
+    .item-1, .item-2, .item-3{
+        padding-left: 15px;
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 15px;
+        transition: all .5s; /* Se ponen transiciones tanto acá como en el hover para que haga aniamciones suaves y no sea todo de golpe */
+    }
+
+    .login{
+        margin-left: 0px;
+        width: 100px;
+        
+    }
+
+    .arbol .paraguay{
+        margin-left: 170px;
+    }
+
+    .arbol .uruguay{
+        margin-left: 170px;
+    }
+
+    .arbol .brasil{
+        margin-left: 320px;
+    }
+
+    .arbol .argentina{
+        margin-left: 320px;
+    }
+
+    .arbol .tronco{
+        margin-left: 284px;
+    }
+
+    /* ----------------> Toda esta mamada para la linita que aparece en los items <---------------- */
+
+    .item-1 a::before, .item-2 a::before, .item-3 a::before{
+        content: ""; /* Para que aparezca la linita tiene que estar esto, así se hace visible en el DOM */
+        height: 3px;
+        width: 0%; /* No tiene ancho porque se le pone en el hover */
+        background: #fff;
+        position: absolute; /* Esto es porque la linita no ocupa espacio real dentro de la pagina */
+        bottom: 20px; /* Configuración para mover hacia abajo */
+        transition: .4s ease-out;
+    }
+
+    /* ----------------> Toda esta mamamda para poner el logo <---------------- */
+
+    .logo{
+        background: rgba(0,0,0,0.1);
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        left: 25;
+        top: -70px;
+        z-index: 1;
+    }
+
+    .logo_circulo{
+        background: rgba(0,0,0,0.1);
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        left: 5;
+        top: 60px;
+        border-radius: 50%;
+        z-index: 50;
+    }
+
+    .img_logo{
+        position: absolute;
+        z-index: 100;
+        top: 65px;
+        left: 8px;
+        transition: all 1.2s;
+    }
+
+}
+
+/* ----------------> Estilos para Notebooks <---------------- */
+
+@media (min-width: 850px) and (max-width: 1199px){
+
+    /* ----------------> Estilos del Navbar <---------------- */
+
+    .nav_mobile{
+        display: none;
+    }    
+
+    .contenedor_principal{
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .navbar_izquierdo ul{
+        display: flex;
+        line-height: 2;
+        font-weight: 500;
+        position: relative;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .item-1, .item-2, .item-3, .item-4{
+        margin-top: 30px;
+        display: inline-block;
+        margin-bottom: 15px;
+        transition: all .5s; 
+    }
+
+    .item-1 a, .item-2 a, .item-3 a, .item-4 a{
+        padding-right: 17px;
+    }
+
+    .login{
+        margin-right: -10px;
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .arbol .paraguay{
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+    
+    .arbol .brasil{
+        margin-left: 180px;
+    }
+
+    .arbol .uruguay{
+        margin-left: 30px;
+    }
+
+    .arbol .argentina{
+        margin-left: 180px;
+    }
+
+    .arbol .tronco{
+        margin-left: 145px;
+    }
+
+    #frase{
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    #frase2{
+        text-align: center;
+        margin: auto;
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    /* ----------------> Toda esta mamada para la linita que aparece en los items <---------------- */
+
+    .item-1 a::before, .item-2 a::before, .item-3 a::before{
+        content: ""; 
+        height: 3px;
+        width: 0%; 
+        background: #fff;
+        position: absolute; 
+        bottom: 20px;
+        transition: .4s ease-out;
+    }
+
+    /* ----------------> Toda esta mamamda para poner el logo <---------------- */
+
+    .img_logo{
+        position: relative;
+        transition: all 1.2s;
+    }
+
+    /* ----------------> Botón de Login <---------------- */
+
+    .login {
+        margin-right: 40px;
+    }
+
+}
+
+
+/* ----------------> Estilos para Celulares <---------------- */
+
+@media (max-width: 849px){
+
+    .contenedor_principal{
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .arbol .paraguay{
+        margin-left: 40px;
+    }
+
+    .arbol .uruguay{
+        margin-left: 40px;
+    }
+
+    .arbol .brasil{
+        margin-left: 190px;
+    }
+
+    .arbol .argentina{
+        margin-left: 190px;
+    }
+
+    .arbol .tronco{
+        margin-left: 155px;
+    }
+
+    #footerL{
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+
+    #frase{
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    #frase2{
+        text-align: center;
+        margin: auto;
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+
+    /* ----------------> Estilos del checkbox <---------------- */
+    
+    .toggler {
+        width: 32px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 2;
+        opacity: 0;
+        right: 13px;
+        top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+
+     /* ----------------> Estilos del hamburger <---------------- */
+    
+    .hamburger-menu {
+        width: 32px;
+        height: 48px;
+        position: absolute;
+        right: 13px;
+        top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger-menu div {
+        position: relative;
+        transition: all .4s ease; 
+    }
+    
+    /* ----------------> Diseño de linea para el menú Hamburger <---------------- */
+    
+    .hamburger-menu div,
+    .hamburger-menu div::before,
+    .hamburger-menu div::after {
+        content: ""; 
+        height: 5px; 
+        width: 100%;
+        background: white;
+        border-radius: 15px;
+    }
+    
+    /* ---------------->Linea superior del menú Hamburger <---------------- */
+    
+    .hamburger-menu div::before {
+        position: absolute; 
+        top: -10px; 
+    }
+
+     /* ----------------> Linea inferior del menú Hamburger <---------------- */
+    
+    .hamburger-menu div::after {
+        position: absolute;
+        top: 10px;
+    }
+    
+    /* ----------------> Rotación del hamburger cuando se clickea <---------------- */
+    
+    .toggler:checked + .hamburger-menu  div {
+        transform: rotate(135deg); /* Ejfecto de rotación */
+    }
+    
+    /* ----------------> Rotación de las lineas superior e inferior al clickear el
+     hamburger, formando una "X" <---------------- */
+    
+    .toggler:checked + .hamburger-menu  div::before,
+    .toggler:checked + .hamburger-menu  div::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    /* ----------------> Estilo del menú superpuesto <---------------- */
+    
+    .menu_superpuesto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        top: 0;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden; 
+        visibility: hidden; 
+        padding: 65px;
+        transition: all .3s ease;
+        z-index: 999;
+    }
+
+    .menu_superpuesto::-webkit-scrollbar{
+        display: none;
+    }
+
+    .toggler:checked + .hamburger-menu + .menu{
+        display: initial; /* vuelve a la posición inicial*/
+    }
+
+    /* Se muestra el menú al clickear el Hamburger */
+    
+    .toggler:checked + .hamburger-menu + .menu .menu_superpuesto {
+        visibility: visible;
+        width: 700px;
+        max-width: 100vw;
+        opacity: 1;
+    }
+    
+    /* ----------------> El Z-Index coloca a objetos posicionados por encima de otros, el que tenga mayor valor va arriba <----------------*/
+
+    .toggler:checked {
+        z-index: 1001;
+    }
+    
+    
+    .toggler:checked + .hamburger-menu {
+        z-index: 1000;
+    }
+    
+    .menu_superpuesto li {
+        opacity: 0;
+        transform: translateX(100%); /* El TranslateX mueve los elementos horizontalmente, los valores positivos los mueve a la derecha y los negativos a la izquierda */
+        transition: all .5s ease;
+        font-size: 35px; 
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    
+    .menu_superpuesto li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .toggler:checked + .hamburger-menu + .menu > .menu_superpuesto li,
+    .toggler:checked + .hamburger-menu + .menu > .menu_superpuesto {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+      /*  ----------------> Los elementos "li" se deslizan de derecha a izquierda  <---------------- */
+    
+    .menu_superpuesto li:nth-child(1) {
+        transition: .2s ease;
+    }
+    
+    .menu_superpuesto li:nth-child(2) {
+        transition: .4s ease;
+    }
+    
+    .menu_superpuesto li:nth-child(3) {
+        transition: .6s ease;
+    }
+    
+    .menu_superpuesto li:nth-child(4) {
+        transition: .7s ease;
+    }
+
+    .menu_superpuesto li:nth-child(5) {
+        transition: .8s ease;
+    }
+    
+    .menu_superpuesto li a:hover {
+        color: #e01ce0;
+    }
+    
+      /* Separador */
+    
+    .menu_superpuesto li:nth-child(5) {
+        width: 65%;
+        height: 3px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+    }
+    
+    /* Se selecciona el último elemento "li" */
+    
+    .menu_superpuesto li:last-child {
+        margin: 30px 0;
+        font-size: 42px;
+        font-weight: 400;
+    }
+
+    
+
+}
+
+
+.frase{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: -100px;
+    margin-left: 0%;
+    color: #fff;
+    text-shadow: -1px 1px 2px #a816ad, 1px 1px 3px #c7230d, 1px -1px 2px #17d6d0, -1px -1px 3px #c6c23f;
+}
+
+.frase2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    color: #fff;
+    text-shadow: -1px 1px 2px #a816ad, 1px 1px 3px #c7230d, 1px -1px 2px #17d6d0, -1px -1px 3px #c6c23f;
+}
+
+
+
+#container{
+    margin-right: 10px;
+}
+
+/* ----------------> Estilos del Footer <---------------- */
+
+footer{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.footer, .footer_fondo{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 30px 30px 30px;
+}
+
+/* ---> Fondo del footer <--- */
+
+.footer_fondo{
+    height: 550px;
+    position: absolute;
+    background: linear-gradient(45deg, #903775, #8233c5, #363553);
+    z-index: -1;
+    
+    background-size: 200%;
+    left: 0;
+}
+
+/* ---> Logo <--- */
+
+.footer .footer_logo{
+    width: 290px;
+    height: 40%;
+    text-align:center;
+    margin-left: -150px;
+    margin-top: 10px;
+}
+
+.footer .footer_logo img{
+    width: 160px;
+    height: 160px;
+    
+}
+
+.footer .footer_logo2{
+    width: 300px;
+    height: 40%;
+    text-align:center;
+    margin-right: -100px;
+    margin-top: 10px;
+}
+
+.footer .footer_logo2 img{
+    width: 260px;
+    height: 160px;
+    
+}
+
+.footer .footer_logo h4{
+    font-size: 22px;  
+    color: #fff;
+    margin-top: 25px;
+}
+
+/* ---> Títulos de las secciones <--- */
+
+.footer h2, .footer_subscripcion h2{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #121212;
+    text-shadow: -1px 1px 2px #41ba45, 1px 1px 3px #c63d2b, 1px -1px 2px #42afac, -1px -1px 3px #c6c23f;
+}
+
+/* ---> Items de las secciones <--- */
+
+.footer p > a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+
+
+/* ---> Elementos que no se muestran, se mostrarán para acomodar el footer en las media queries <--- */
+
+.activo + .footer_subscripcion{
+    display: none;
+}
+
+.activo{
+    display: none;
+}
+
+.footer_subscripcion + h4{
+    display: none;
+}
+
+.logo_responsive{
+    display: none;
+}
+
+
+/* ---> Form de ingreso de email <--- */
+
+.footer_subscripcion{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.subscripcion{
+    width: 250px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #000;
+    margin: 30px 0;
+    border-radius: 50px;
+}
+
+.subscr_input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    width: 180px;
+    font-weight: bold;
+}
+
+.subscripcion i{
+    width: 40px;
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+
+/* ---> Botón de envió <--- */
+
+.btn_subscr{
+    display: block;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 3px solid #000;
+    background: linear-gradient(#6dffff, #9703de);
+    color: #fff;
+    margin: 30px 20px;
+    transition: all .3s;
+}
+
+.btn_subscr:hover{
+    transform: scale(1.2);
+}
+
+/* ---> Línea divisoria <--- */
+
+.divisor_footer{
+    width: 90%;
+    height: 5px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* ---> Conatctos y Redes <--- */
+
+.contactos_redes{
+    padding: 30px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactos_redes h1{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.contactos_redes .redes{
+    width: 300px;
+    padding: 20px;
+}
+
+.contactos_redes .redes h1{
+    position: relative;
+    top: -25px;
+}
+
+.contactos_redes .contactos h1{
+    padding-top: 20px;
+}
+
+.contactos_redes .contactos p{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contactos_redes .contactos p > i{
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+/* ---> Íconos de redes <--- */
+
+.redes_iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.redes_iconos a{
+    display: block;
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    transition: all .4s;
+}
+
+.redes_iconos i{
+    margin-top: 13px;
+    color: #fff;
+}
+
+.redes_iconos a:nth-child(1){
+    background: #3b5998;
+}
+
+.redes_iconos a:nth-child(2){
+    background: #1c96e8;
+}
+
+.redes_iconos a:nth-child(3){
+    background: linear-gradient(-35deg, #feda75, #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+}
+
+.redes_iconos a:nth-child(1):hover{
+    box-shadow: #fff 0 -1px 4px, #f470bb 0 -2px 10px, #8b9dc3 0 -10px 20px, #3b5998 0 -18px 50px, 5px 5px 15px 5px rgba(0,0,0,0);
+    transform: scale(1.2);
+}
+
+.redes_iconos a:nth-child(2):hover{
+    box-shadow: #fff 0 -1px 4px, #f470bb 0 -2px 10px, #00b8ff 0 -10px 20px, #1c96e8 0 -18px 30px, 5px 5px 15px 5px rgba(0,0,0,0);
+    transform: scale(1.2);
+}
+
+.redes_iconos a:nth-child(3):hover{
+    box-shadow: #fff 0 -1px 4px, #f470bb 0 -2px 10px, #962fbf 0 -10px 20px, #4f5bd5 0 -18px 30px, 5px 5px 15px 5px rgba(0,0,0,0);
+    transform: scale(1.2);
+}
+
+/* ---> Contactos <--- */
+
+@media (min-width:1100px) {
+
+    .footer{
+        padding: 30px 10px;
+        justify-content: space-evenly;
+    }
+
+    .footer_ayuda, .footer_detalles{
+        flex-shrink: 0;
+    }
+
+    .footer_subscripcion{
+        flex-basis: 300px;
+    }
+
+    .footer p > a:hover{
+        text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    }
+
+}
+
+@media (max-width: 1099px) {
+
+    .footer{
+        padding: 30px 30px;
+    }
+
+    .footer_subscripcion{
+        flex-basis: 270px;
+    }
+
+    .contactos_redes .contactos p{
+        font-size: 20px;
+    }
+
+    .contactos_redes .contactos p > i{
+        font-size: 30px;
+    }
+
+    .contactos_redes .redes h1{
+        position: relative;
+        top: -9px;
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .footer .footer_logo{
+        width: 200px;
+        margin-left: 10px;
+    }
+    
+    .footer .footer_logo img{
+        width: 160px;
+        height: 160px;
+        margin-left: 10px;
+    }
+
+    .footer .footer_logo2{
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .footer .footer_logo2 img{
+        width: 160px;
+        height: 160px;
+        margin-right: 10px;
+    }
+
+    .footer .footer_logo h4, .footer a{
+        font-size: 17px;
+    }
+
+    .contactos_redes h1{
+        font-size: 40px;
+    }
+
+    .redes_iconos{
+        justify-content: space-around;
+    }
+
+    .redes_iconos a{
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .redes_iconos i{
+        margin-top: 11px;
+    }
+
+    .contactos_redes .contactos p{
+        font-size: 15px;
+    }
+
+    .contactos_redes .contactos p > i{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .footer .footer_logo{
+        display: none;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+
+    .footer_fondo{
+        height: 350px;
+    }
+
+
+    .footer_subscripcion{
+        display: none;
+    }
+
+    .activo{
+        display: block;
+    }
+
+    .activo + .footer_subscripcion {
+        display: flex;
+        height: 250px;
+    }
+
+    .footer_subscripcion h2{
+        margin-bottom: 0;
+    }
+
+    .footer_subscripcion .subscripcion {
+        margin-top: 20px;
+    }
+
+    .logo_responsive{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .logo_responsive h4{
+        color: #fff;
+        text-align: center;
+    }
+
+    .logo_responsive img{
+        width: 60px;
+        height: 60px;
+    }
+
+
+}
+
+@media (max-width: 530px) {
+
+    .footer_fondo{
+        height: 1000px;
+    }
+    
+    .footer, .contactos_redes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_responsive{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .logo_responsive h4{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+
+    .contactos_redes .contactos{
+        margin-bottom: 20px;
+    }
+
+    
+
+}
+
+.arbol{
+    margin-left: 28%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 300px;
+    height: 350px;
+}
+
+.arbol img{
+    max-width: 150px;
+    max-height: 200px;
+}
+.argentina{
+    margin-left: 98%;
+}
+
+.brasil{
+    margin-top: -65%;
+    margin-left: 97.4%;
+}
+
+.uruguay{
+    margin-top: -30%;
+    margin-left: 48%;
+    z-index: 10;
+}
+
+.paraguay{
+    margin-left: 48%;
+}
+
+.tronco{
+    margin-left: 86%;
+    margin-top: -1%;
+    z-index: -1;
+}
